@@ -85,9 +85,17 @@ $(document).ready(function () {
     },
   });
   // owl carousel script end
+
+  
 });
 
 // Get the current year
 const currentYear = new Date().getFullYear();
 // Set the current year in the span with id "year"
 document.getElementById('year').textContent = currentYear;
+
+
+
+
+
+

@@ -186,9 +186,23 @@
                         <p> Apple Clone</p>
                     </a>
 
-                    <p>JavaScript, Html , css</p>
+                    <p>Reactjs, JavaScript, Html , css</p>
 
                 </div>
+                
+                <div class="card">
+                    <a href="https://crypto-tracker-git-main-nisha-sharmas-projects.vercel.app/" target="_blank" rel="noreferrer" title="Crypto-Tracker">
+                        <div class="box">
+                            <img src="./images/cryptoTracker.png" alt="Crypto-Tracker">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Nisharma18/crypto-tracker.git" target="_blank" rel="noreferrer" title="Crypto-Tracker Github Repository">
+                        <p>Crypto-Tracker</p>
+                    </a>
+
+                    <p>Reactjs, JavaScript, Html , MUI, Css, Framer Motion, API</p>
+                </div>
+
                 <div class="card">
                     <a href="https://discover-property.vercel.app/" target="_blank" rel="noreferrer" title="Discover Property">
                         <div class="box">
@@ -288,20 +302,20 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" id="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" name="email" required>
+                                <input type="email" placeholder="Email" name="email"  id="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" id="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Describe Project..." id="text" required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Send Message <i class="fas fa-paper-plane"></i>
+                            <button type="submit" onclick= "EmailSend() ; reset(); return false ;" >Send Message <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
                     </form>
@@ -311,12 +325,16 @@
     </section>
     <!-- Contact section end -->
     <!-- footer section start -->
+
+
+
     <footer>
         <span>Created By <a href="https://www.linkedin.com/in/chetannada/" target="_blank" rel="noreferrer">Nisha Sharma</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
     </footer>
     <!-- footer section end -->
     <!-- External Javascript File start-->
     <script src="script.js" async></script>
+    <script src="email.js" async></script>
     <!-- External Javascript File end-->
 </body>
 
