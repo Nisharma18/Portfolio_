@@ -1,8 +1,8 @@
 function EmailSend(){
-    const name = document.getElementById("name").value
-    const userEmail = document.getElementById("email").value
-    const message = document.getElementById("message").value
-    const subject = document.getElementById("subject").value
+    const name = document.getElementById("name").value ;
+    const userEmail = document.getElementById("email").value ;
+    const message = document.getElementById("message").value ;
+    const subject = document.getElementById("subject").value ;
 
     const formBody = `
     name : ${name} </br>
