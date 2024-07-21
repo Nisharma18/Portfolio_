@@ -18,7 +18,7 @@ function EmailSend(){
         To : 'ns1660200@gmail.com',
         From :  "ns1660200@gmail.com",
         // From :  document.getElementById("email").value,
-        Subject : "Portfolio Enquery form : "`${subject}`,
+        Subject : `Portfolio Enquery form : ${subject}`,
         Body : formBody,
        
     }).then(
