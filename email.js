@@ -17,10 +17,8 @@ function EmailSend(){
         Password: "61A4686AA6B1C5AA0D74986FEAA595D32FE8",
         To : 'ns1660200@gmail.com',
         From :  "ns1660200@gmail.com",
-        // From :  document.getElementById("email").value,
         Subject : `Portfolio Enquery form : ${subject}`,
-        Body : formBody,
-       
+        Body : formBody
     }).then(
     message => alert(message)
     );
