@@ -240,7 +240,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Reach Out to me!</div>
-                    <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
+                    <!-- <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p> -->
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form onsubmit= "EmailSend() ; reset(); return false ;">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" id="name" required>
@@ -315,7 +315,7 @@
                             <textarea cols="30" rows="10" placeholder="Describe Project..." id="text" required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit" onclick= "EmailSend() ; reset(); return false ;" >Send Message <i class="fas fa-paper-plane"></i>
+                            <button type="submit"  >Send Message <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
                     </form>
@@ -334,6 +334,7 @@
     <!-- footer section end -->
     <!-- External Javascript File start-->
     <script src="script.js" async></script>
+    <script src="https://smtpjs.com/v3/smtp.js" async></script>
     <script src="email.js" async></script>
     <!-- External Javascript File end-->
 </body>
